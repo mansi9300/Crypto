@@ -1,4 +1,4 @@
-// App.jsx
+
 import React, { useRef } from 'react';
 import Header from './Header';
 import HeroSection from './HeroSection';
@@ -12,7 +12,7 @@ import TradeSection from './Trade';
 import Footer from './Footer';
 
 const App = () => {
-  // Refs for scroll navigation
+ 
   const heroRef = useRef(null);
   const squareRef = useRef(null);
   const futuresRef = useRef(null);
