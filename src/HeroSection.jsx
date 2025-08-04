@@ -23,11 +23,11 @@ const HeroSection = () => {
   ];
   const coins = activeTab === "popular" ? popularCoins : newListings;
 
-  const features = [ /* ... your existing features ... */ ];
+  const features = [ /* ...features ... */ ];
 
   return (
     <>
-      {/* MAIN HERO SECTION (unchanged) */}
+     
       <section className="min-h-screen bg-black text-white flex flex-col md:flex-row items-start justify-between px-8 py-16">
         {/* Left section */}
         <div className="space-y-10 ml-10 max-w-xl">

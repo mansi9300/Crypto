@@ -17,18 +17,18 @@ const Header = ({
 
   const handleNavClick = (scrollFn) => {
     scrollFn();
-    setShowMobileMenu(false); // close on mobile nav click
+    setShowMobileMenu(false); 
   };
 
   return (
     <header className="bg-black text-white px-6 py-4 flex justify-between items-center border-b border-gray-800 sticky top-0 z-50">
-      {/* Logo */}
+      
       <div className="flex items-center gap-2 cursor-pointer" onClick={scrollToHero}>
         <img src="https://cdn2.iconfinder.com/data/icons/investing-crayons-vol-1/256/Cryptocurrency_Investment-1024.png" alt="Crypto Logo" className="w-6 h-6" />
         <span className="text-yellow-400 font-bold text-xl">CRYPTO</span>
       </div>
 
-      {/* Desktop Navigation */}
+    
       <nav className="hidden md:flex items-center gap-6 text-sm">
         <button onClick={() => handleNavClick(scrollToBuy)} className="hover:text-yellow-400">Buy Crypto</button>
         <button onClick={() => handleNavClick(scrollToMarket)} className="hover:text-yellow-400">Markets</button>
@@ -39,7 +39,7 @@ const Header = ({
         <button onClick={() => handleNavClick(scrollToMore)} className="hover:text-yellow-400">More</button>
       </nav>
 
-      {/* Auth Buttons */}
+    
       <div className="hidden md:flex items-center gap-4">
         <button 
           onClick={() => setShowAuthModal(true)}
@@ -55,7 +55,7 @@ const Header = ({
         </button>
       </div>
 
-      {/* Mobile Menu Button */}
+   
       <button className="md:hidden text-white" onClick={() => setShowMobileMenu(!showMobileMenu)}>
         {showMobileMenu ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
       </button>
